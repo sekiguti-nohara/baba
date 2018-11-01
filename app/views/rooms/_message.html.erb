@@ -1,0 +1,6 @@
+<div class="message">
+  <p><%= message.message %></p>
+  <% if current_user.id == 1 %>
+  	<%= link_to "削除", message_path(message.id), method: :delete %>
+  <% end %>
+</div>
